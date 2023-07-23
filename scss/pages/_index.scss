@@ -1,0 +1,183 @@
+.banner {
+    background-image: url(../../img/banner.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    
+    &__titulo {
+        font-family: $font-title;
+                font-size: 3.7rem;
+                color: #ffffff;
+                width: 30vh;
+                padding-top: 5vh;
+                padding-left: 4vh;
+    }
+
+    & span {
+        color: rgb(175, 5, 5);
+    }
+
+    &__btn {
+        background-color: rgb(245, 245, 75);
+        border: 1px rgb(174, 177, 7) solid;
+        font-family: $font-title;
+        font-size: 1.5rem;
+        color: black;
+        margin-left: 8vh;
+        padding: 1vh 3vh 1vh 3vh;
+        border-radius: 40px;
+
+        &:hover {
+            background-color: rgb(238, 238, 128);
+            border: 1px rgb(174, 177, 7) solid;
+        }
+    }
+
+    @include desktop {
+        .banner {
+            background-image: url(../../img/banner.jpg);
+            height: 80vh;
+            background-size: cover;
+            
+            &__titulo {
+                font-family: $font-title;
+                font-size: 5rem;
+                color: #e6e6e6;
+                width: 40vh;
+                padding-top: 10vh;
+                padding-left: 5vh;
+            }
+        
+            & span {
+                color: rgb(175, 5, 5);
+            }
+            
+            &__btn {
+                margin-left: 1;
+            }
+        }
+    }
+}
+
+.promocion {
+    background-color: yellow;
+    height: 14vh;
+    display: flex;
+    font-family: $font-title;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        font-size: 3rem;
+        text-align: center;
+        color: transparent;
+        -webkit-text-stroke: 2px black;
+    }
+    span {
+        -webkit-text-stroke: 2px red; 
+    }
+
+    @include desktop {
+        h3 {
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.presentacion {
+    color: white;
+    height: 80vh;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__desc {
+        padding: 4vh;
+
+        height: 50vh;
+        h2 {
+            font-family: $font-title;
+            font-size: 3rem;
+        }
+        p {
+            font-family: $font-text;
+            justify-content: center;
+        }
+    }
+    
+    &__btn {
+        background-color: rgb(245, 245, 75);
+        border: 1px rgb(174, 177, 7) solid;
+        font-family: $font-title;
+        font-size: 1.5rem;
+        color: black;
+        padding: 1vh 3vh 1vh 3vh;
+        border-radius: 40px;
+    
+        &:hover {
+            background-color: rgb(238, 238, 128);
+            border: 1px rgb(174, 177, 7) solid;
+        }
+    }
+
+    &__equipo {
+        img {
+            width: 80%;
+            padding-bottom: 5vh;
+        }
+    }
+
+    @include desktop {
+        height: 55vh;
+        flex-direction: unset;
+        text-align: center;
+        justify-content: center;
+        
+        &__desc {
+            padding-top: 10vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+        }
+
+        &__equipo {
+            height: 100%;
+            width: 50%;
+            
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.servicios {
+    background-color: rgb(245, 62, 62);
+    text-align: center;
+    padding: 4vh;
+    &__title {
+        font-family: $font-title;
+        color: white;
+    }
+
+    &__btn {
+        background-color: rgb(245, 245, 75);
+        border: 1px rgb(174, 177, 7) solid;
+        font-family: $font-title;
+        font-size: 1.5rem;
+        color: black;
+        padding: 1vh 3vh 1vh 3vh;
+        border-radius: 40px;
+
+        &:hover {
+            background-color: rgb(238, 238, 128);
+            border: 1px rgb(174, 177, 7) solid;
+        }
+    }
+}

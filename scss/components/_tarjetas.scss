@@ -1,0 +1,43 @@
+.tarjetas {
+    @include flexbox();
+    flex-direction: column;
+
+    &__contenedor {
+        padding: 2vh;
+        text-align: center;
+        margin: 2vh;
+        background-color: whitesmoke;
+        width: 70%;
+        height: 42vh;
+    }
+
+    &__mensual {
+        color: rgb(95, 93, 93);
+        font-family: $font-text;
+        text-align: left;
+        border-bottom: 1px solid grey;
+    }
+
+    &__title {
+        font-family: $font-title;
+        font-size: 2rem;
+    }
+
+    &__precio {
+        font-family: $font-text;
+        font-size: 2rem;
+        border-bottom: 1px solid grey;
+        & span {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__desc {
+        font-family: $font-text;
+        font-size: 1rem;
+    }
+
+    @include desktop {
+        flex-direction: unset;
+    }
+}

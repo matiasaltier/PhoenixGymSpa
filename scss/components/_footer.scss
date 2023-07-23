@@ -1,0 +1,16 @@
+.foot {
+    background-color: #1c1c1c;
+    color: whitesmoke;
+    height: 20vh;
+    text-align: center;
+    justify-content: center;
+    font-family: $font-text;
+    &__redes {
+        @include flexbox(center, center);
+        padding: 5vh 0 3vh 0vh;
+    }
+
+    &__items {
+        padding-left: 2vh;
+    }
+}

@@ -1,0 +1,256 @@
+/* Base CSS */
+/* Reseteo del CSS */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+/* @mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+} */
+.navbar {
+  background-color: #1c1c1c;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.nav-item a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tarjetas__contenedor {
+  padding: 2vh;
+  text-align: center;
+  margin: 2vh;
+  background-color: whitesmoke;
+  width: 70%;
+  height: 42vh;
+}
+.tarjetas__mensual {
+  color: rgb(95, 93, 93);
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
+.tarjetas__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+}
+.tarjetas__precio {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  border-bottom: 1px solid grey;
+}
+.tarjetas__precio span {
+  font-size: 1.4rem;
+}
+.tarjetas__desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .tarjetas {
+    flex-direction: unset;
+  }
+}
+
+.foot {
+  background-color: #1c1c1c;
+  color: whitesmoke;
+  height: 20vh;
+  text-align: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.foot__redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0 3vh 0vh;
+}
+.foot__items {
+  padding-left: 2vh;
+}
+
+.banner {
+  background-image: url(../../img/banner.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner__titulo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.7rem;
+  color: #ffffff;
+  width: 30vh;
+  padding-top: 5vh;
+  padding-left: 4vh;
+}
+.banner span {
+  color: rgb(175, 5, 5);
+}
+.banner__btn {
+  background-color: rgb(245, 245, 75);
+  border: 1px rgb(174, 177, 7) solid;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 8vh;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 40px;
+}
+.banner__btn:hover {
+  background-color: rgb(238, 238, 128);
+  border: 1px rgb(174, 177, 7) solid;
+}
+@media (min-width: 768px) {
+  .banner .banner {
+    background-image: url(../../img/banner.jpg);
+    height: 80vh;
+    background-size: cover;
+  }
+  .banner .banner__titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    color: #e6e6e6;
+    width: 40vh;
+    padding-top: 10vh;
+    padding-left: 5vh;
+  }
+  .banner .banner span {
+    color: rgb(175, 5, 5);
+  }
+  .banner .banner__btn {
+    margin-left: 1;
+  }
+}
+
+.promocion {
+  background-color: yellow;
+  height: 14vh;
+  display: flex;
+  font-family: "Bebas Neue", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.promocion h3 {
+  font-size: 3rem;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
+.promocion span {
+  -webkit-text-stroke: 2px red;
+}
+@media (min-width: 768px) {
+  .promocion h3 {
+    font-size: 3.2rem;
+  }
+}
+
+.presentacion {
+  color: white;
+  height: 80vh;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.presentacion__desc {
+  padding: 4vh;
+  height: 50vh;
+}
+.presentacion__desc h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+}
+.presentacion__desc p {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+.presentacion__btn {
+  background-color: rgb(245, 245, 75);
+  border: 1px rgb(174, 177, 7) solid;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 40px;
+}
+.presentacion__btn:hover {
+  background-color: rgb(238, 238, 128);
+  border: 1px rgb(174, 177, 7) solid;
+}
+.presentacion__equipo img {
+  width: 80%;
+  padding-bottom: 5vh;
+}
+@media (min-width: 768px) {
+  .presentacion {
+    height: 55vh;
+    flex-direction: unset;
+    text-align: center;
+    justify-content: center;
+  }
+  .presentacion__desc {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+  }
+  .presentacion__equipo {
+    height: 100%;
+    width: 50%;
+  }
+  .presentacion__equipo img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.servicios {
+  background-color: rgb(245, 62, 62);
+  text-align: center;
+  padding: 4vh;
+}
+.servicios__title {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+.servicios__btn {
+  background-color: rgb(245, 245, 75);
+  border: 1px rgb(174, 177, 7) solid;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 40px;
+}
+.servicios__btn:hover {
+  background-color: rgb(238, 238, 128);
+  border: 1px rgb(174, 177, 7) solid;
+}
+
+/*# sourceMappingURL=styles.css.map */

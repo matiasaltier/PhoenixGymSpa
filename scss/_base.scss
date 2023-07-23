@@ -1,0 +1,48 @@
+/* Base CSS */
+$paleta-primaria-1: #ff0000;
+$paleta-primaria-2: #f7931E;
+$paleta-primaria-3: #ffff00;
+
+$font-title:'Bebas Neue', sans-serif;
+$font-text: 'Poppins', sans-serif;
+
+/* Reseteo del CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+/* @mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+} */
+
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin flexbox ($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid ($columnas, $filas) {
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+}
+
+
