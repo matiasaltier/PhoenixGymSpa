@@ -1,0 +1,21 @@
+.sedes {
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    background-color: #1c1c1c;
+    &__title {
+        font-family: $font-title;
+        color: white;
+        font-size: 4rem;
+    }
+    &__desc {
+        font-family: $font-text;
+        & p {
+            color: white;
+        }
+    }
+}
+
+#white {
+    color: white;
+}

@@ -253,4 +253,36 @@ ul, ol {
   border: 1px rgb(174, 177, 7) solid;
 }
 
+.centered-form {
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 10vh;
+  color: #1c1c1c;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.sedes {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #1c1c1c;
+}
+.sedes__title {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  font-size: 4rem;
+}
+.sedes__desc {
+  font-family: "Poppins", sans-serif;
+}
+.sedes__desc p {
+  color: white;
+}
+
+#white {
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
